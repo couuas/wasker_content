@@ -57,4 +57,4 @@ This design means: **Every modification you make to these files reshapes the AI'
 
 OpenClaw is no longer just a chat box floating in the cloud; it's more like a "digital employee" living on your server.
 
-Because it possesses a **workspace on a physical disk**, it can bridge sessions and models. After a power cycle, it can still pick up the notebook and say: "Boss, I've submitted the PR for yesterday's galaxy component. Let's talk about the deployment plan."
+Beyond memory, the next step is implementation. See [[Zero to One: A Practical Guide to OpenClaw Skill Development]] for a hands-on example of creating persistent capabilities.

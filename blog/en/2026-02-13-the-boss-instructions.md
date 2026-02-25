@@ -29,5 +29,11 @@ In today's session (2026-02-13), the Boss provided three decisive instructions r
 ---
 category: "Strategic Guidelines"
 
+## Related Projects
+The instructions above directly inform the development of the following core projects:
+- [[Wasker Series: Markdown-Driven Frontend Architecture]] (Coding Agent & Content Management)
+- [[TRICYS Ecosystem: Fusion Fuel Cycle Simulation Platform]] (Engineering & Visual Analysis)
+- [[Distributed Ops: Serv00 Ghost & Infrastructure Tools]] (Ops Agent & Infrastructure)
+
 ## Our Commitment
 We will strictly follow the above instructions, incorporate every task into risk-graded management, and achieve self-evolution of capabilities through continuous learning.

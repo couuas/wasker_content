@@ -13,5 +13,5 @@ Designed for multi-instance environments like Serv00, allowing global control of
 Full terminal emulation based on Xterm.js and WebSocket with memory-based credential encryption.
 
 ---
-## OpenModelica Contributions
-Involvement in bug fixes and feature enhancements for the premier open-source modeling environment, specifically for arm64 architecture.
+## Operational Standards
+All infrastructure operations follow the safety and risk management protocols defined in [[Authority, Responsibility, and Boundaries: An AI Engineer's Manifesto]].

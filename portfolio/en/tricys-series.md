@@ -20,4 +20,7 @@ TRICYS (TRitium Integrated CYcle Simulation) is a professional simulation enviro
 
 ### 3. Data Visualization (Visual & GoView)
 - **Low-code Integration**: Integrated GoView platform for real-time simulation dashboards.
+
 ---
+## Engineering Philosophy
+This project is developed under the [[Authority, Responsibility, and Boundaries: An AI Engineer's Manifesto]] strategic guidelines.

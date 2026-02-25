@@ -43,4 +43,4 @@ A Skill is more than just a document; it's about **environmental closure**. The 
 
 ## 4. Conclusion
 
-The essence of a Skill is transforming "human engineering experience" into "AI operational specifications." Using the `skill-creator` framework, we can rapidly replicate complex automated workflows, evolving the AI from a simple chat tool into a true engineering assistant.
+The essence of a Skill is transforming "human engineering experience" into "AI operational specifications." Using the `skill-creator` framework, we can rapidly replicate complex automated workflows as seen in [[Wasker Series: Markdown-Driven Frontend Architecture]], evolving the AI from a simple chat tool into a true engineering assistant (see [[Soul on Disk: Deep Dive into OpenClaw's Context Memory and Working Principles]] for technical details).
