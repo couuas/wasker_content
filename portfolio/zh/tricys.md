@@ -1,7 +1,7 @@
 ---
 title: "TRICYS：聚变氚燃料循环仿真平台"
 date: 2026-02-27
-category: "Engineering & Simulation"
+category: "TRICYS"
 description: "面向聚变堆氚燃料循环的开源仿真平台，支持协同仿真、参数扫描与自动化报告。"
 tags: ["fusion", "simulation", "python", "modelica"]
 ---

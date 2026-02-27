@@ -1,7 +1,7 @@
 ---
 title: "TRICYS: Tritium Integrated Cycle Simulation Platform"
 date: 2026-02-27
-category: "Engineering & Simulation"
+category: "TRICYS"
 description: "Open-source fusion tritium fuel cycle simulator with modular co-simulation, parameter scanning, and automated reporting."
 tags: ["fusion", "simulation", "python", "modelica"]
 ---

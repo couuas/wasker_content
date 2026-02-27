@@ -1,7 +1,7 @@
 ---
 title: "Tricys Visual：实时仿真可视化前端"
 date: 2026-02-27
-category: "Web Development"
+category: "TRICYS"
 description: "基于 Vue 3 的 TRICYS 前端，提供实时监控、三维可视化与 GoView 大屏集成。"
 tags: ["vue", "threejs", "visualization", "dashboard"]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Tricys Backend：仿真调度与数据服务"
 date: 2026-02-27
-category: "Backend Engineering"
+category: "TRICYS"
 description: "基于 FastAPI 的 TRICYS 仿真后端，提供任务调度、日志流与高性能数据接口。"
 tags: ["fastapi", "asyncio", "websocket", "hdf5"]
 ---

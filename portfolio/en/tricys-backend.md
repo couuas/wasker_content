@@ -1,7 +1,7 @@
 ---
 title: "Tricys Backend: Simulation Orchestration API"
 date: 2026-02-27
-category: "Backend Engineering"
+category: "TRICYS"
 description: "FastAPI service for scheduling TRICYS simulations, streaming logs, and serving high-performance data APIs."
 tags: ["fastapi", "asyncio", "websocket", "hdf5"]
 ---

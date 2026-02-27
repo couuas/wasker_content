@@ -1,7 +1,7 @@
 ---
 title: "Tricys Visual: Real-time Simulation Frontend"
 date: 2026-02-27
-category: "Web Development"
+category: "TRICYS"
 description: "Vue 3 frontend for TRICYS with real-time monitoring, 3D visualization, and GoView dashboard integration."
 tags: ["vue", "threejs", "visualization", "dashboard"]
 ---
