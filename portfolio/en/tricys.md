@@ -29,6 +29,21 @@ TRICYS (TRitium Integrated CYcle Simulation) is an open-source, modular, multi-s
 - **Windows-first Setup**: Local installation for full co-simulation support.
 - **Docker Dev Containers**: Containerized environments for standardized 0D simulations and reproducible development.
 
+## Source & Architecture Deep Dive
+### Logical Source Modules
+- **Modelica model library**: Implements reusable subsystem components (e.g., plasma exhaust handling, isotope separation, fuel supply) that can be assembled into a full fuel cycle.
+- **Python orchestration layer**: Defines scenario configs, validates parameter ranges, and dispatches runs through the `tricys` CLI.
+- **Data pipeline & persistence**: Standardizes simulation outputs into structured datasets for post-processing, statistics, and sensitivity analysis.
+- **Analysis & reporting utilities**: Aggregate metrics, generate plots/tables, and render Markdown reports for downstream review.
+- **Integration adapters**: Bridges for co-simulation tools (e.g., Aspen Plus) to exchange boundary conditions and results.
+
+### Data Flow (End-to-End)
+1. **Scenario definition**: Modelica components and parameter sets are assembled into a reproducible scenario bundle.
+2. **Execution & sampling**: The orchestration layer runs single cases or parameter scans and captures time-series outputs.
+3. **Normalization**: Raw outputs are converted into consistent datasets for analytics, sensitivity studies, and comparisons.
+4. **Insight synthesis**: Reports consolidate charts, key KPIs, and model assumptions; AI summaries highlight trends.
+5. **Ecosystem handoff**: Results can be streamed to [[tricys-backend]] for services and [[tricys-visual]] for live dashboards.
+
 ## Workflow
 1. **Environment Setup**: Install Python (3.8+), OpenModelica, and project dependencies.
 2. **Scenario Definition**: Assemble Modelica components and define parameter sets.
