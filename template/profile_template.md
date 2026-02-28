@@ -7,7 +7,7 @@ roles: ["Developer", "Designer", "Writer"] # Array for typing effect
 services:
   - title: "Web Development"
     description: "Building modern websites."
-    link: "/portfolio"
+    link: "/blog"
   - title: "UI/UX Design"
     description: "Designing beautiful interfaces."
     link: "/contact"

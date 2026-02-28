@@ -1,6 +1,6 @@
 # Wasker Content Repository
 
-This repository contains all the markdown content for the Wasker Vue portfolio site. To ensure that `wasker_vue` can correctly parse and display your posts, please follow the organizational structure and metadata rules defined below.
+This repository contains all the markdown content for the Wasker Vue site. To ensure that `wasker_vue` can correctly parse and display your posts, please follow the organizational structure and metadata rules defined below.
 
 ## 📁 Directory Structure
 
@@ -12,8 +12,6 @@ The site determines the **Type**, **Language**, and **Category** of a post based
 ### 1. Types
 The top-level folders define the content type:
 - `blog/`: Articles and blog posts.
-- `portfolio/`: Project showcases.
-- `friend/`: Friend links or community pages.
 - `journal/`: Daily notes or logs.
 - `mysites/`: Personal site links.
 - `profile/`: Single file `profile.md` for the about page.
@@ -22,10 +20,8 @@ The top-level folders define the content type:
 ### 📄 Content Templates
 For a detailed schema of fields required for each page, refer to the files in `src/content/template/`. These provide a "blueprint" for creating new content:
 - `blog_template.md`: Schema for articles.
-- `portfolio_template.md`: Schema for projects.
 - `journal_template.md`: Schema for daily notes.
 - `profile_template.md`: Comprehensive fields for the user avatar, skills, and background.
-- `friend_template.md`: Schema for linking friends and personal sites.
 
 ### 2. Languages
 The second-level folder defines the language:
@@ -84,7 +80,6 @@ You can link to another post using double brackets. The site will search for mat
 ### 2. Standard Markdown Links
 You can also use standard links. Relative paths are preferred for consistency:
 - `[Related Article](./another-post.md)`
-- `[Project Detail](../../portfolio/en/my-project.md)`
 - `[Blog Link](/blog/slug)` (Site will resolve this to the current language's blog post)
 
 ### Connection Logic
