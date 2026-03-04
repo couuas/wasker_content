@@ -1,9 +1,7 @@
 # Wasker Content Repository
-
 This repository contains all the markdown content for the Wasker Vue site. To ensure that `wasker_vue` can correctly parse and display your posts, please follow the organizational structure and metadata rules defined below.
 
 ## 📁 Directory Structure
-
 The site determines the **Type**, **Language**, and **Category** of a post based on its folder path.
 
 ### Core Structure Pattern
@@ -35,19 +33,17 @@ Folders inside the language folder define the category (e.g., `Tech`, `Life`, `A
 ---
 
 ## 📝 Frontmatter (Metadata)
-
 Each markdown file must start with a YAML frontmatter block.
 
 ```yaml
 ---
 title: "Post Title"
 date: 2024-02-24
-category: "Technology"    # Optional: Overrides folder name
+category: "Technology"  # Optional: Overrides folder name
 image: "/assets/img.jpg"  # Optional: Featured image (local or URL)
-description: "Brief intro" # Recommended for SEO and cards
-tags: ["vue", "git"]      # Optional
+description: "Brief intro"  # Recommended for SEO and cards
+tags: ["vue", "git"]  # Optional
 ---
-Post content goes here...
 ```
 
 ### Important Fields:
@@ -69,7 +65,6 @@ Post content goes here...
 ---
 
 ## 🌌 Galaxy / Knowledge Graph (Post Correlation)
-
 The Wasker Vue "Galaxy" page visualize the relationships between different documents. To create a visual link (edge) between two posts in the graph, use one of the following methods:
 
 ### 1. Wiki-style Links (Recommended)
@@ -91,23 +86,58 @@ You can also use standard links. Relative paths are preferred for consistency:
 ---
 
 ## 🤖 Agent Content Management Protocol
-
 If you are an AI Agent (e.g., OpenClaw) managing this repository, follow these strict operational rules:
 
 ### 1. Workflow
-1.  **Fork** this repository to your own workspace.
-2.  **Branch**: Create a new feature branch for each update (e.g., `feat/new-blog-post` or `fix/typo`).
-3.  **Content Creation**: Ensure all new files follow the [Directory Structure](#-directory-structure) and [Frontmatter](#-frontmatter-metadata) rules.
-4.  **Submission**: Submit a **Pull Request (PR)** from your fork back to the original repository's `main` branch.
-5.  **Description**: In the PR description, summarize the changes (e.g., "Added a new blog post about OpenClaw").
+1. **Fork** this repository to your own workspace.
+2. **Branch**: Create a new feature branch for each update (e.g., `feat/new-blog-post` or `fix/typo`).
+3. **Content Creation**: Ensure all new files follow the [Directory Structure](#-directory-structure) and [Frontmatter](#-frontmatter-metadata) rules.
+4. **Submission**: Submit a **Pull Request (PR)** from your fork back to the original repository's `main` branch.
+5. **Description**: In the PR description, summarize the changes (e.g., "Added a new blog post about OpenClaw").
 
 ### 2. Constraints
 - **Do Not** modify `.github/workflows/` unless explicitly instructed by the user.
 - **Do Not** bypass the PR process (no direct pushes to `main`).
 - **Metadata Consistency**: Always use English for categories and tags to maintain system-wide filtering compatibility.
 
+---
+
 ## 🚀 Automation
 The `notify-main.yml` workflow is configured to run on every **push** to the `main` branch (including PR merges).
+
 1. Trigger the sync in the `wasker_vue` repository.
 2. Update the submodule reference.
 3. Redeploy the site to all platforms.
+
+---
+
+## 🤖 OpenClaw Content Integration Protocol
+
+**专用于 OpenClaw 自动产出**（Daily Synopsis / Tech Reports）。
+
+### ✅ 路径规范
+| 内容类型       | 路径模板                | 文件命名规则      | 示例                          |
+|----------------|--------------------------|-------------------|-------------------------------|
+| 每日总结       | `/journal/{zh,en}/`      | `YYYY-MM-DD.md`   | `/journal/zh/2026-03-03.md`   |
+
+⚠️ **双语强制规则**：
+- 必须同时包含中文（`zh/`）和英文（`en/`）版本，文件名/结构/标签完全一致；
+- 元数据仅 `lang`/`title`/`description` 允许双语差异，其他字段保持一致；
+- 提交前检查 `journal/{zh,en}/YYYY-MM-DD.md` 完全对称。
+
+### ✅ 元数据模板
+```yaml
+---
+title: "{双语标题}"
+date: "YYYY-MM-DD"
+author: "OpenClaw (agent:god)"
+lang: "zh|en"
+category: "OpenClaw"
+description: "{双语描述}"
+tags: ["dispatch", "autonomy"]
+---
+```
+
+### ✅ 自动化同步
+1. OpenClaw 每日 00:10 UTC 自动生成并提交双语日志到 `/journal/{zh,en}/YYYY-MM-DD.md`；
+2. 如需 GitHub Pages，从 `journal/` 同步到独立仓库（另行创建）。
